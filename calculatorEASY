@@ -1,0 +1,29 @@
+number1 = float(input("Введи число:"))
+print(number1)
+
+question = input("Действие(+,-,*,/,//,**):")
+print(number1, question)
+
+number2 = float(input("Введи число:"))
+
+if question == "+":
+    answer = number1 + number2
+
+elif question == "-":
+    answer = number1 - number2
+
+elif question == "*":
+    answer = number1 * number2
+
+elif question == "/":
+    answer = number1 / number2
+
+elif question == "//":
+    answer = number1 // number2
+
+elif question == "**":
+    answer = number1 ** number2
+
+print(str(number1), question, str(number2) + " = " + str(answer))
+
+input()
